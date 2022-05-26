@@ -1,0 +1,14 @@
+connector:
+  name: dock3
+  identifier: dock3
+  description:
+  orgIdentifier: default
+  projectIdentifier: git3
+  type: DockerRegistry
+  spec:
+    dockerRegistryUrl: dp.com
+    providerType: DockerHub
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - acctgroup
