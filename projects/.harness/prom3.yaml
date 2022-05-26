@@ -1,0 +1,13 @@
+connector:
+  name: prom3
+  identifier: prom3
+  description:
+  orgIdentifier: default
+  projectIdentifier: git3
+  type: Artifactory
+  spec:
+    artifactoryServerUrl: test.com
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - acctgroup
