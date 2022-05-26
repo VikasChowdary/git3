@@ -1,0 +1,24 @@
+connector:
+  name: git3Connector
+  identifier: git3Connector
+  description:
+  orgIdentifier: default
+  projectIdentifier: git3
+  type: Github
+  spec:
+    url: https://github.com/VikasChowdary/git3
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: VikasChowdary
+          tokenRef: patForGit
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: patForGit
+    delegateSelectors:
+    - acctgroup
+    executeOnDelegate: true
+    type: Repo
